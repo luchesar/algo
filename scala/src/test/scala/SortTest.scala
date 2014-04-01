@@ -8,37 +8,37 @@ class SortTest {
   )
 
   @Test
-  def insertionSort() {
+  def insertionSort(): Unit = {
     for ((unsorted, sorted) <- arr) 
       assertThat(InsertionSort(unsorted)).isEqualTo(sorted)
   }
 
   @Test
-  def selectionSort() {
+  def selectionSort(): Unit = {
     for ((unsorted, sorted) <- arr) 
       assertThat(SelectionSort(unsorted)).isEqualTo(sorted)
   }
 
   @Test
-  def bubleSort() {
+  def bubleSort(): Unit = {
     for ((unsorted, sorted) <- arr) 
       assertThat(BubbleSort(unsorted)).isEqualTo(sorted)
   }
 
   @Test
-  def mergeSort() {
+  def mergeSort(): Unit = {
     for ((unsorted, sorted) <- arr) 
       assertThat(MergeSort(unsorted)).isEqualTo(sorted)
   }
 
   @Test
-  def quickSort() {
+  def quickSort(): Unit = {
     for ((unsorted, sorted) <- arr) 
       assertThat(QuickSort(unsorted)).isEqualTo(sorted)
   }
 
   @Test
-  def heapSort() {
+  def heapSort(): Unit = {
     for ((unsorted, sorted) <- arr) 
       assertThat(HeapSort(unsorted)).isEqualTo(sorted)
   }

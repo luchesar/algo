@@ -1,5 +1,12 @@
 object InsertionSort {
-  def apply(a: Array[Int]): Array[Int] = a
+  def apply(a: Array[Int]): Array[Int] = {
+    var max = Integer.MIN_VALUE
+    for (e <- a) {
+      if (e > tpm) {
+        
+      }
+    } 
+  }
 }
 
 object SelectionSort {
